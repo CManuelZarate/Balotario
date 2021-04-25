@@ -1,12 +1,13 @@
 .input-ingresar{
-    width: 40%;
+    width: 250px;
     text-align: center;
     height: 3.1rem;
     font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn-ingresar{
-    width: 40%;
+    width: 250px;
 }
 .caja{
     /*display: flex;

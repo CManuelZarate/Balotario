@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-
+  error=false;
+  codigo="";
   constructor() { }
 
   ngOnInit(): void {
+  }
+  //Validamos el codigo
+  ingresar(){
+    if(this.codigo==""){
+      this.error=true;
+      setTimeout(()=>{
+        this.error=false;
+      },2000)
+    }
   }
 
 }

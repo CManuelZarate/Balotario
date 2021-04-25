@@ -7,6 +7,14 @@
 
 
 <div class="caja d-flex flex-column align-items-center justify-content-center">
-    <input type="text" class="form-control input-ingresar mb-3" placeholder="Codigo del Balotario">
-    <button class="btn-ingresar ">Ingresar</button>
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+        <strong> Ingrese el codigo del balotario</strong> 
+      </div>
+    <input [(ngModel)]="codigo" type="text" class="form-control input-ingresar mb-3" placeholder="Codigo del Balotario">
+    <button (click)="ingresar()" class="btn-ingresar btn-principal">Ingresar</button>
+</div>
+<div class="fixed-bottom">
+    <p class="text-center text-white">
+        Crea uno nuevo <a href="#" class="text-decoration-none fw-bold  text-white">aqui</a>
+    </p>
 </div>
