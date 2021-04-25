@@ -1,0 +1,17 @@
+.input-ingresar{
+    width: 40%;
+    text-align: center;
+    height: 3.1rem;
+    font-size: 1.25rem;
+}
+
+.btn-ingresar{
+    width: 40%;
+}
+.caja{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*//*sin B*/
+    height: 100vh;
+}
